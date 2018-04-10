@@ -1,0 +1,52 @@
+$servername = 'localhost';
+$db = 'cs174';
+$user = 'root';
+$password = '';
+$table = 'DATA';
+
+.....................................................................................
+Create Admin Database MySQL
+.....................................................................................
+
+CREATE TABLE `admin` (
+`fname` varchar(128) NOT NULL,
+  `lname` varchar(128) NOT NULL,
+  `username` varchar(128) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+);
+.....................................................................................
+XxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxX
+
+
+
+.....................................................................................
+Insert Admin Data
+.....................................................................................
+
+$salt1 = '%9Xbqb';
+$salt2 = '*7(Dz_.t:LZNZ:';
+email = cs174@example.com
+password = cs174
+.....................................................................................
+
+INSERT INTO `admin` VALUES ('Aaron','Chan','cs174@example.com','20217130aa99dad573b0662e5e710843',1);
+.....................................................................................
+XxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxX
+
+
+
+
+.....................................................................................
+Create collection data
+.....................................................................................
+CREATE TABLE `DATA` (
+  `INPUTDATA` varchar(128) NOT NULL,
+  `NAME` varchar(128) NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+)
+.....................................................................................
+XxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxX
